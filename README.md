@@ -1,18 +1,18 @@
-SparkFun Qwiic 4m Distance Sensor with VL53L1X
+SparkX Qwiic Multi Distance Sensor - VL53L3CX
 ========================================
 
-![SparkFun Distance Sensor Breakout - 4 Meter, VL53L1X (Qwiic)](https://cdn.sparkfun.com/assets/parts/1/2/9/4/8/14722-SparkFun_Distance_Sensor_Breakout-_4_Meter__VL53L1X__Qwiic_-01.jpg)
+![Qwiic Multi Distance Sensor - VL53L3CX]()
 
-[*SparkFun Distance Sensor Breakout - 4 Meter, VL53L1X (Qwiic)(SEN-14722)*](https://www.sparkfun.com/products/14722)
+[*Qwiic Multi Distance Sensor - VL53L3CX(SPX-17072)*](https://www.sparkfun.com/products/17072)
 
-The VL53L1X is the latest Time Of Flight (ToF) sensor to be released. It uses a VCSEL (vertical cavity surface emitting laser) to emit a class 1 IR laser and time the reflection to the target. What does all this mean? You can measure the distance to an object up to 4 meters away with millimeter resolution! That’s pretty incredible.
+The VL53L3CX is an awesome ToF (Time of Flight) range finder from STMicroelectronics, who brought us the venerable VL53L1X. It shares the same diminutive form factor as its predecessor but has learned a cool new trick: Multi-object detection! With some very fancy algorithms, the VL53L3CX is able to detect different objects within the field of view with depth understanding, something that isn't very common in laser range finders. The VL53L3CX has a field of view of about 25° and is able to detect objects up to 3 meters away, making it ideal for robotics, IoT, and smart lighting applications. 
 
-We’re far from done: The VL53L1X is a highly complex sensor with a multitude of options and configurations. We’ve written example sketches that allow you to read the distance, signal rate, and range status. Because ST has chosen not to release a complete datasheet we are forced to reverse engineer the interface from their example code and I2C data stream captures. If you’re into puzzles we could use your help to make the library better!
+Our Qwiic Multi Distance Sensor breakout provides a simple, solder-free way to prototype using this tiny sensor. If you _want_ to solder, however, we have also provided 0.1" headers for the power, I²C, interrupt, and shutdown pins. 
 
-We’ve found the precision of the sensor to be 1mm but the accuracy is around +/-5mm.
+No Arduino library is available for the VL53L3CX as of yet, however a full set of C and Linux [software drivers](https://www.st.com/content/st_com/en/products/embedded-software/proximity-sensors-software/stsw-img015.html) are available from STMicroelectronics.
 
 SparkFun labored with love to create this code. Feel like supporting open source hardware? 
-Buy a [breakout board](https://www.sparkfun.com/products/14722) from SparkFun!
+Buy a [breakout board](https://www.sparkfun.com/products/17072) from SparkFun!
 
 Repository Contents
 -------------------
@@ -20,16 +20,6 @@ Repository Contents
 * **/Documents** - Datasheet and User Manual
 * **/Hardware** - Eagle design files (.brd, .sch)
 * **/Production** - .brd files
-
-Documentation
---------------
-* **[Arduino Library](https://github.com/sparkfun/SparkFun_VL53L1X_Arduino_Library)** - Library for reading distance in millimeters, signal rate, status, etc.
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/qwiic-distance-sensor-vl53l1x-hookup-guide)**
-
-Product Versions
---------------
-* **[SEN-14722](https://www.sparkfun.com/products/14722)** - SparkFun red version
-* **[SPX-14667](https://www.sparkfun.com/products/14667)** - SparkX Version 
 
 License Information
 -------------------
